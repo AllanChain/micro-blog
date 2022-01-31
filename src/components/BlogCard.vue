@@ -1,0 +1,21 @@
+<script setup lang="ts">
+import type { BlogEntry } from '~/types'
+
+const props = defineProps<{ blog: BlogEntry; distance: number }>()
+</script>
+
+<template>
+  <div
+    w-80 m-4 p-4
+    bg-white preserve-3d
+    class="absolute top-1/2 odd:left-0 even:right-0"
+    border="1 blue-500/50 rounded-md"
+    :style="{
+      transform: `translateZ(${-props.distance}px)`,
+    }"
+  >
+    <p>
+      {{ props.blog.content }}
+    </p>
+  </div>
+</template>
