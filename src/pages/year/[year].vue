@@ -9,7 +9,7 @@ const { isFetching, error, data } = useFetch(
 ).json<BlogEntries>()
 
 const scrollY = ref(0)
-const itemZGap = ref(300)
+const itemZGap = ref(100)
 const itemYGap = ref(500)
 
 onMounted(() => {
@@ -21,9 +21,6 @@ onMounted(() => {
 
 <template>
   <div>
-    <!-- <h1 text-center>
-      {{ year }}
-    </h1> -->
     <div v-if="isFetching">
       Loading...
     </div>
@@ -31,7 +28,6 @@ onMounted(() => {
       <div
         :style="{
           height: `calc(${itemYGap * (data.length-1)}px + 100vh)`,
-          // 'scroll-snap-type': 'y mandatory'
         }"
       >
         <div
@@ -48,7 +44,6 @@ onMounted(() => {
         :style="{
           perspective: '100px',
           'perspective-origin': '50% 50%',
-          // transform: `translateZ(${scrollY/itemYGap*itemZGap}px)`,
         }"
       >
         <div
@@ -82,7 +77,7 @@ onMounted(() => {
 </template>
 
 <style>
-html, body{
+html, body {
   scroll-snap-type: y mandatory;
 }
 </style>
