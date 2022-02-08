@@ -1,7 +1,13 @@
-export interface BlogEntry {
-  datetime: string
-  content: string
-  images: string[]
+export interface MicroBlog {
+  bodyHTML: string
+  createdAt: string
+  updatedAt: string
 }
 
-export type BlogEntries = BlogEntry[]
+export interface Discussion {
+  title: string
+  year: string
+  blogs: MicroBlog[]
+}
+
+export type BlogEntries = MicroBlog[]

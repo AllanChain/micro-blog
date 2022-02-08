@@ -59,7 +59,7 @@ onMounted(() => {
         >
           <BlogCard
             v-for="(blog, i) in data"
-            :key="blog.datetime"
+            :key="blog.createdAt"
             :blog="blog"
             :distance="(data.length - i - 1) * itemZGap"
           />

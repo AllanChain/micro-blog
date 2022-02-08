@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { BlogEntry } from '~/types'
+import type { MicroBlog } from '~/types'
 
-const props = defineProps<{ blog: BlogEntry; distance: number }>()
+const props = defineProps<{ blog: MicroBlog; distance: number }>()
 </script>
 
 <template>
@@ -13,9 +13,6 @@ const props = defineProps<{ blog: BlogEntry; distance: number }>()
     :style="{
       transform: `translateZ(${-props.distance}px)`,
     }"
-  >
-    <p>
-      {{ props.blog.content }}
-    </p>
-  </div>
+    v-html="props.blog.bodyHTML"
+  />
 </template>

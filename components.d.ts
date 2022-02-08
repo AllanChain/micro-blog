@@ -5,7 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     BlogCard: typeof import('./src/components/BlogCard.vue')['default']
-    BlogHolder: typeof import('./src/components/BlogHolder.vue')['default']
     Counter: typeof import('./src/components/Counter.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
   }
