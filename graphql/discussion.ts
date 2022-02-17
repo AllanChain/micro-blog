@@ -47,12 +47,17 @@ async function main() {
     },
   }).argv
   const discussions = await getDiscussions()
+  const years: string[] = []
   const dist = pathJoin(__dirname, '..', argv.dist, 'data/year')
   await mkdir(dist, { recursive: true })
   for (const discussion of discussions) {
+    years.push(discussion.year)
     const filePath = pathJoin(dist, `${discussion.year}.json`)
     await writeFile(filePath, JSON.stringify(discussion.blogs, null, 2))
   }
+  await writeFile(
+    pathJoin(dist, '..', 'years.json'), JSON.stringify(years, null, 2),
+  )
 }
 
 main()
