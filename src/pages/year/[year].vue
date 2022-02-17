@@ -9,7 +9,8 @@ const { isFetching, error, data } = useFetch(
 ).json<BlogEntries>()
 
 const scrollY = ref(0)
-const itemZGap = ref(100)
+const primaryPerspective = ref(100)
+const itemZGap = ref(150)
 const itemYGap = ref(500)
 
 onMounted(() => {
@@ -42,7 +43,7 @@ onMounted(() => {
       <div
         fixed top-0 right-0 w-full h-full
         :style="{
-          perspective: '100px',
+          perspective: `${primaryPerspective}px`,
           'perspective-origin': '50% 50%',
         }"
       >
