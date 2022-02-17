@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/micro-blog/favicon.svg" type="image/svg+xml">
+  <title>Vitesse Lite</title>
+  <meta name="description" content="Opinionated Vite Starter Template">
+  <script type="module" crossorigin src="/micro-blog/assets/index.270bb900.js"></script>
+  <link rel="modulepreload" href="/micro-blog/assets/vendor.3a21c021.js">
+  <link rel="stylesheet" href="/micro-blog/assets/index.94b486e0.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    (function() {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('color-schema') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  
+</body>
+</html>
