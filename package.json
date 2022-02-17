@@ -7,6 +7,7 @@
     "lint": "eslint . --ext=.ts,.vue",
     "gql-codegen": "graphql-codegen",
     "data:public": "ts-node --skip-project graphql/discussion.ts --dist public",
+    "data:dist": "ts-node --skip-project graphql/discussion.ts --dist dist",
     "postinstall": "pnpm gql-codegen",
     "test": "vitest"
   },
