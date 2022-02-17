@@ -1,6 +1,9 @@
-name: Build Site on Blog Change
+name: Build and Deploy Site
 
 on:
+  push:
+    branches:
+      - main
   discussion_comment:
     types: [created, edited, deleted]
 
@@ -9,10 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          path: dist
       - uses: actions/setup-node@v1
         with:
           node-version: '16.x'
@@ -27,9 +26,10 @@ jobs:
         with:
           version: latest
           run_install: true
-      - run: pnpm data:dist
+      - run: pnpm data:public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: pnpm build -- --base=/micro-blog/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
