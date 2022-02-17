@@ -7,10 +7,11 @@ const props = defineProps<{ blog: MicroBlog; distance: number }>()
 <template>
   <div
     w-80 mx-4 p-4
-    bg-white bg-opacity-80 preserve-3d absolute
+    preserve-3d absolute
     overflow-y-auto
     class="top-1/2 odd:left-0 even:right-0"
     border="1 blue-500/50 rounded-md"
+    bg="white dark:gray-800 opacity-80 dark:opacity-60"
     :style="{
       'max-width': 'calc(100% - 2rem)',
       'max-height': 'calc(100% - 2rem)',
