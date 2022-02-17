@@ -5,7 +5,7 @@ const props = defineProps<{ year: string }>()
 const router = useRouter()
 
 const { isFetching, error, data } = useFetch(
-  `/data/year/${props.year}.json`,
+  `data/year/${props.year}.json`,
 ).json<BlogEntries>()
 
 const scrollY = ref(0)

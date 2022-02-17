@@ -2,7 +2,7 @@
 const router = useRouter()
 
 const { data } = useFetch(
-  '/data/years.json',
+  'data/years.json',
 ).json<string[]>()
 </script>
 
