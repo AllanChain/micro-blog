@@ -12,6 +12,9 @@ const scrollY = ref(0)
 const primaryPerspective = ref(100)
 const itemZGap = ref(150)
 const itemYGap = ref(500)
+const currentItemIndex = computed(() => {
+  return Math.floor(scrollY.value / itemYGap.value)
+})
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
@@ -53,12 +56,13 @@ onMounted(() => {
             transform: `translateZ(${scrollY / itemYGap * itemZGap}px)`,
           }"
         >
-          <BlogCard
-            v-for="(blog, i) in data"
-            :key="blog.createdAt"
-            :blog="blog"
-            :distance="(data.length - i - 1) * itemZGap"
-          />
+          <template v-for="(blog, i) in data" :key="blog.createdAt">
+            <BlogCard
+              v-show="i + currentItemIndex < data.length"
+              :blog="blog"
+              :distance="(data.length - i - 1) * itemZGap"
+            />
+          </template>
         </div>
       </div>
     </div>
