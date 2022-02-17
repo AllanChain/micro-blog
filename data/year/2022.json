@@ -1,0 +1,32 @@
+[
+  {
+    "bodyHTML": "<p dir=\"auto\">Micro blog 主要是写一些短篇的 web log</p>",
+    "createdAt": "2022-01-31T13:05:16Z",
+    "updatedAt": "2022-01-31T13:05:26Z"
+  },
+  {
+    "bodyHTML": "<ul dir=\"auto\">\n<li>今年春晚好难看啊</li>\n<li>难看就不要看啊</li>\n<li>不看我咋吐槽</li>\n</ul>",
+    "createdAt": "2022-02-04T04:17:47Z",
+    "updatedAt": "2022-02-04T04:17:58Z"
+  },
+  {
+    "bodyHTML": "<p dir=\"auto\">贵校的树洞生态圈还蛮有意思的，之前都没有发现，一直以为一条树洞的曝光率随时间大致递减。要不是加了个统计，咋会想到若干天前的树洞也会有突然点击量增加的操作。也就是说，除了树洞时间线以外，还有看不见的树洞曝光机制。</p>",
+    "createdAt": "2022-02-15T03:27:45Z",
+    "updatedAt": "2022-02-15T03:27:55Z"
+  },
+  {
+    "bodyHTML": "<p dir=\"auto\">不行啊，micro blog 更新频率堪忧，居然已经断更 11 天了。还是没有把想法整理成句记下来的习惯吧。</p>\n<p dir=\"auto\">啥？什么时候把 web UI 做好？要不就五一再更一波吧 <g-emoji class=\"g-emoji\" alias=\"bird\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f426.png\">🐦</g-emoji><g-emoji class=\"g-emoji\" alias=\"bird\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f426.png\">🐦</g-emoji><g-emoji class=\"g-emoji\" alias=\"bird\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f426.png\">🐦</g-emoji></p>",
+    "createdAt": "2022-02-15T03:35:03Z",
+    "updatedAt": "2022-02-15T03:35:14Z"
+  },
+  {
+    "bodyHTML": "<blockquote>\n<p dir=\"auto\">The best is the enemy of the good.</p>\n</blockquote>\n<p dir=\"auto\">这句话的出处已然难以考证，也许是因为它简单朴实，很多人都这样总结。</p>\n<p dir=\"auto\">换句话讲呢，就是“路要一步一步走，饭要一口一口吃”。追求卓越这词常讲，但它们也不矛盾——这句话侧重 good 尚未实现的时候就想要 best 的严重后果。</p>\n<p dir=\"auto\">放到 programming 的语境下，也就是动手之前的设计固然重要，但计划肯定赶不上变化，上来就想设计一个完美的结构，费时不说，就算真的设计出来了，结果横生枝节或者需求一改，原来的 best 就不再是 best 了。再联想“过早优化是万恶之源”，也是类似的道理。</p>",
+    "createdAt": "2022-02-17T11:08:26Z",
+    "updatedAt": "2022-02-17T11:08:37Z"
+  },
+  {
+    "bodyHTML": "<p dir=\"auto\">达成成就：大晚上包场静园踩雪玩</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/36528777/154484426-0e788c89-b7ec-419f-b3be-85b471af2803.jpg\"><img src=\"https://user-images.githubusercontent.com/36528777/154484426-0e788c89-b7ec-419f-b3be-85b471af2803.jpg\" alt=\"高糊画质.jpg\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">注：脚印都不是我的 <g-emoji class=\"g-emoji\" alias=\"smile\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f604.png\">😄</g-emoji></p>",
+    "createdAt": "2022-02-17T12:46:10Z",
+    "updatedAt": "2022-02-17T12:46:23Z"
+  }
+]
