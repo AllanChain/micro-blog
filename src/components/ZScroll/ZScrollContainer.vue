@@ -15,6 +15,7 @@ provide('item-z-gap', itemZGap)
 
 const allItemIndices = ref<number[]>([])
 const itemsCount = computed(() => {
+  if (allItemIndices.value.length === 0) return 0
   return Math.max(...allItemIndices.value) + 1
 })
 
