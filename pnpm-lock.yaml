@@ -9,6 +9,7 @@ specifiers:
   '@iconify-json/carbon': ^1.0.12
   '@types/node': ^17.0.5
   '@types/yargs': ^17.0.8
+  '@unocss/preset-typography': ^0.24.4
   '@unocss/preset-wind': ^0.22.0
   '@unocss/reset': ^0.22.0
   '@vitejs/plugin-vue': ^2.0.1
@@ -46,6 +47,7 @@ devDependencies:
   '@iconify-json/carbon': 1.0.12
   '@types/node': 17.0.5
   '@types/yargs': 17.0.8
+  '@unocss/preset-typography': 0.24.4
   '@unocss/preset-wind': 0.22.0
   '@unocss/reset': 0.22.0
   '@vitejs/plugin-vue': 2.0.1_vite@2.7.9+vue@3.2.26
@@ -1713,6 +1715,10 @@ packages:
     resolution: {integrity: sha512-OmVGy40NcqKwxTcGbVi+0d2JgXIaZM73lXCllngFoeKXzoGvciIf3yiqSD5filDu7QoDSM3avDGq7w+oH/GlvQ==}
     dev: true
 
+  /@unocss/core/0.24.4:
+    resolution: {integrity: sha512-GNDyoDuivj5lyxTeOWVvHQzAJSgFvKuHMWGgxx+6P/Q+wABuDTxxOfmTX2umSX7vGGwwO71yXAWNt2OA2581AQ==}
+    dev: true
+
   /@unocss/inspector/0.22.0:
     resolution: {integrity: sha512-he/aC1pW71wSnK4EeGuzCOA9EVNW7nCk+Kix9rKt1gsGdSIFc3Unlrn7y2noLzaYzkyPggpWVQs7WsmkigaVaw==}
     dependencies:
@@ -1738,6 +1744,12 @@ packages:
     resolution: {integrity: sha512-WDFWajwE45W0EtUUkOOJa+/nGYr4lXQDfUSXDyDiLl18Ho5MNRm7ta4/zdChtJR+6bvoHWA2VCDG+nCB2QXlMw==}
     dependencies:
       '@unocss/core': 0.22.0
+    dev: true
+
+  /@unocss/preset-typography/0.24.4:
+    resolution: {integrity: sha512-4vezrY3R9ezKjT8Xbr6hoKqwXsBAR+vjzA+dhoA9QiUdxmnr/ljYswj4bLN/flHvgelmkTADs/LKl2tcZt3iiQ==}
+    dependencies:
+      '@unocss/core': 0.24.4
     dev: true
 
   /@unocss/preset-uno/0.22.0:

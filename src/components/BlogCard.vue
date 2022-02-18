@@ -9,9 +9,10 @@ const props = defineProps<{ blog: MicroBlog; distance: number }>()
     w-80 mx-4 p-4
     preserve-3d absolute
     overflow-y-auto
-    class="top-1/2 odd:left-0 even:right-0"
+    prose prose-blue dark:prose-invert
+    class=" top-1/2 odd:left-0 even:right-0"
     border="1 blue-500/50 rounded-md"
-    bg="white dark:gray-800 opacity-80 dark:opacity-60"
+    bg="white/80 dark:gray-800/80"
     :style="{
       'max-width': 'calc(100% - 2rem)',
       'max-height': 'calc(100% - 2rem)',

@@ -8,6 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { presetAttributify, presetIcons } from 'unocss'
 import presetWind from '@unocss/preset-wind'
+import { presetTypography } from '@unocss/preset-typography'
 import Unocss from 'unocss/vite'
 
 export default defineConfig({
@@ -50,6 +51,7 @@ export default defineConfig({
         presetIcons({
           scale: 1.2,
         }),
+        presetTypography(),
       ],
     }),
   ],
