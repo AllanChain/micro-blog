@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Ref } from 'vue'
+import type { Ref, StyleValue } from 'vue'
 
 const props = defineProps<{
   index: number
@@ -39,7 +39,7 @@ const classes = computed(() => {
     v-show="currentItemIndex! <= index"
     absolute preserve-3d transform
     :class="classes"
-    :style="{ '--un-translate-z': `${-index * itemZGap!}px` }"
+    :style="{ '--un-translate-z': `${-index * itemZGap!}px` } as StyleValue"
   >
     <slot />
   </div>
