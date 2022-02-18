@@ -11,7 +11,7 @@ const { isFetching, error, data } = useFetch(
 const scrollY = ref(0)
 const primaryPerspective = ref(100)
 const itemZGap = ref(150)
-const itemYGap = ref(500)
+const itemYGap = ref(200)
 const currentItemIndex = computed(() => {
   return Math.floor(scrollY.value / itemYGap.value)
 })
