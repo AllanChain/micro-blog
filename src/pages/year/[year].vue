@@ -2,7 +2,6 @@
 import type { BlogEntries } from '~/types'
 
 const props = defineProps<{ year: string }>()
-const router = useRouter()
 
 const { isFetching, error, data } = useFetch(
   `data/year/${props.year}.json`,
@@ -31,15 +30,6 @@ const { isFetching, error, data } = useFetch(
     </div>
     <div v-else>
       Error: {{ error }}
-    </div>
-
-    <div>
-      <button
-        class="btn m-3 text-sm mt-8"
-        @click="router.back()"
-      >
-        Back
-      </button>
     </div>
   </div>
 </template>
