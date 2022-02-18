@@ -7,11 +7,14 @@ const { data } = useFetch(
 </script>
 
 <template>
-  <div v-if="data">
+  <div v-if="data" max-w-md mx-auto mt-6 text-center>
+    <h1 text-2xl font-bold my-4>
+      All Micro Blogs
+    </h1>
     <button
       v-for="year in data"
       :key="year"
-      bg="green-600 hover:green-700 active:green-800"
+      bg="green-600 active:green-700 dark:green-700 dark:active:green-600"
       border="rounded-lg"
       text="white"
       p="x-2 y-1"

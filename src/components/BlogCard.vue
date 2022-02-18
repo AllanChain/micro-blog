@@ -1,22 +1,19 @@
 <script setup lang="ts">
 import type { MicroBlog } from '~/types'
 
-const props = defineProps<{ blog: MicroBlog; distance: number }>()
+const props = defineProps<{ blog: MicroBlog }>()
 </script>
 
 <template>
   <div
     w-80 mx-4 p-4
-    preserve-3d absolute
     overflow-y-auto
     prose prose-slate dark:prose-invert
-    class=" top-1/2 odd:left-0 even:right-0"
     border="1 blue-500/50 rounded-md"
     bg="white/80 dark:gray-800/80"
     :style="{
       'max-width': 'calc(100% - 2rem)',
       'max-height': 'calc(100% - 2rem)',
-      transform: `translateY(-50%) translateZ(${-props.distance}px)`,
     }"
     v-html="props.blog.bodyHTML"
   />

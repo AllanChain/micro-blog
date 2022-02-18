@@ -7,20 +7,6 @@ const router = useRouter()
 const { isFetching, error, data } = useFetch(
   `data/year/${props.year}.json`,
 ).json<BlogEntries>()
-
-const scrollY = ref(0)
-const primaryPerspective = ref(100)
-const itemZGap = ref(150)
-const itemYGap = ref(200)
-const currentItemIndex = computed(() => {
-  return Math.floor(scrollY.value / itemYGap.value)
-})
-
-onMounted(() => {
-  window.addEventListener('scroll', () => {
-    scrollY.value = window.scrollY
-  })
-})
 </script>
 
 <template>
@@ -29,42 +15,19 @@ onMounted(() => {
       Loading...
     </div>
     <div v-else-if="data">
-      <div
-        :style="{
-          height: `calc(${itemYGap * (data.length-1)}px + 100vh)`,
-        }"
-      >
-        <div
-          v-for="i in data.length"
-          :key="i"
-          :style="{
-            height: `${itemYGap}px`,
-            'scroll-snap-align': 'start'
-          }"
-        />
-      </div>
-      <div
-        fixed top-0 right-0 w-full h-full
-        :style="{
-          perspective: `${primaryPerspective}px`,
-          'perspective-origin': '50% 50%',
-        }"
-      >
-        <div
-          absolute w-full h-screen preserve-3d
-          :style="{
-            transform: `translateZ(${scrollY / itemYGap * itemZGap}px)`,
-          }"
+      <ZScrollContainer>
+        <ZScrollItem
+          v-for="(blog, i) in data"
+          :key="blog.createdAt"
+          :index="data.length - 1 - i"
+          center-y even-odd
         >
-          <template v-for="(blog, i) in data" :key="blog.createdAt">
-            <BlogCard
-              v-show="i + currentItemIndex < data.length"
-              :blog="blog"
-              :distance="(data.length - i - 1) * itemZGap"
-            />
-          </template>
-        </div>
-      </div>
+          <BlogCard :blog="blog" />
+        </ZScrollItem>
+        <ZScrollItem :index="data.length" center-y center-x>
+          <div>End</div>
+        </ZScrollItem>
+      </ZScrollContainer>
     </div>
     <div v-else>
       Error: {{ error }}
@@ -80,9 +43,3 @@ onMounted(() => {
     </div>
   </div>
 </template>
-
-<style>
-html, body {
-  scroll-snap-type: y mandatory;
-}
-</style>
