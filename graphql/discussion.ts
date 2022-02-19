@@ -4,6 +4,7 @@ import { GraphQLClient } from 'graphql-request'
 import * as yargs from 'yargs'
 import { config as dotenvConfig } from 'dotenv'
 import { marked } from 'marked'
+import sanitizeHtml from 'sanitize-html'
 import type { Discussion } from '../src/types'
 import { getSdk } from './sdk'
 
@@ -28,7 +29,7 @@ export async function getDiscussions(): Promise<Discussion[]> {
             ?.filter(node => node?.author?.login === 'AllanChain')
             ?.flatMap(node => node
               ? [{
-                bodyHTML: marked.parse(node.body),
+                bodyHTML: sanitizeHtml(marked.parse(node.body)),
                 createdAt: node.createdAt,
                 updatedAt: node.updatedAt,
                 reactionCount: node.reactions.totalCount + node.upvoteCount,
@@ -38,7 +39,7 @@ export async function getDiscussions(): Promise<Discussion[]> {
                     authorName: 'name' in node.author! ? node.author!.name ?? '' : '',
                     createdAt: node.createdAt,
                     updatedAt: node.updatedAt,
-                    bodyHTML: marked.parse(node.body),
+                    bodyHTML: sanitizeHtml(marked.parse(node.body)),
                   }]
                   : [],
                 ) ?? [],
