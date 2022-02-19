@@ -48,5 +48,12 @@
     "updatedAt": "2022-02-18T04:59:07Z",
     "reactionCount": 2,
     "replies": []
+  },
+  {
+    "bodyHTML": "<p>不讲“何故”地要求“服从”都是“耍流氓”</p>\n<p>From Charles  Munger:  <a href=\"http://www.safalniveshak.com/wp-content/uploads/2012/08/Lesson-on-Elementary-Worldly-Wisdom-Charlie-Munger.pdf\"><em>A  Lesson  on  Elementary,  Worldly Wisdom As It Relates To Investment Management &amp; Business</em></a>:</p>\n<blockquote>\n<p>His rule for all the Braun Company’s communications was called the five W’s—you had to  tell  who  was  going  to  do  what,  where,  when  and  why.  And  if  you  wrote  a  letter  or directive  in  the  Braun  Company  telling  somebody  to  do  something,  and  you  didn’t  tell him why, you could get fired. In fact, you would get fired if you did it twice. </p>\n<p>... if  you  always  tell  people  why,  they’ll  understand  it better,  they’ll  consider  it  more  important,  and  they’ll  be  more  likely  to  comply.  Even  if they don’t understand your reason, they’ll be more likely to comply.</p>\n</blockquote>\n<p>无论是出于尊重还是效率，都应该说清楚“何故”。相信每个人都有这种感受，本能地抗拒无意义的服从要求，更不要说利用无意义的服从要求来测试服从性了。大部分军训中宣传的服从观念并不利于培养社会主义接班人，不愿服从就不是被指挥者的单方面错误，大规模的不服从中必然有指挥者的失职。所谓“道之以政，齐之以刑，民免而无耻；道之以德，齐之以礼，有耻且格。”作为指挥者，与其成天妄想下属就是存心不想顺着自己走，不如常念“君子之德风，小人之德草，草上之风必偃”的道理，讲清楚了、理顺了，自然会愿意服从的。</p>\n<p>当然上述对军训中服从性价值观的批评并不适用于军队中的服从。打起仗来一不小心就一片混乱，哪有时间解释呢？有时间的时候，看看白毛女啥的，阶级意识不就来了吗？服从性不就上来了吗？对，说的就是淮海战役“即俘即补即教即战”的故事。</p>\n<p>最后放到 programming 的语境下，写 commit message 不写清楚为何做了此项更改，现在的同事和以后的自己可不得一头雾水？</p>\n",
+    "createdAt": "2022-02-19T11:30:25Z",
+    "updatedAt": "2022-02-19T11:30:37Z",
+    "reactionCount": 1,
+    "replies": []
   }
 ]
