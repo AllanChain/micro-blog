@@ -3,6 +3,7 @@ import { join as pathJoin } from 'path'
 import { GraphQLClient } from 'graphql-request'
 import * as yargs from 'yargs'
 import { config as dotenvConfig } from 'dotenv'
+import { marked } from 'marked'
 import type { Discussion } from '../src/types'
 import { getSdk } from './sdk'
 
@@ -27,7 +28,7 @@ export async function getDiscussions(): Promise<Discussion[]> {
             ?.filter(node => node?.author?.login === 'AllanChain')
             ?.flatMap(node => node
               ? [{
-                bodyHTML: node.bodyHTML,
+                bodyHTML: marked.parse(node.body),
                 createdAt: node.createdAt,
                 updatedAt: node.updatedAt || node.createdAt,
               }]
