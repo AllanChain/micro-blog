@@ -30,7 +30,18 @@ export async function getDiscussions(): Promise<Discussion[]> {
               ? [{
                 bodyHTML: marked.parse(node.body),
                 createdAt: node.createdAt,
-                updatedAt: node.updatedAt || node.createdAt,
+                updatedAt: node.updatedAt,
+                reactionCount: node.reactions.totalCount + node.upvoteCount,
+                replies: node.replies.nodes?.flatMap(node => node
+                  ? [{
+                    authorId: node.author!.login ?? '',
+                    authorName: 'name' in node.author! ? node.author!.name ?? '' : '',
+                    createdAt: node.createdAt,
+                    updatedAt: node.updatedAt,
+                    bodyHTML: marked.parse(node.body),
+                  }]
+                  : [],
+                ) ?? [],
               }]
               : [],
             ) ?? [],
