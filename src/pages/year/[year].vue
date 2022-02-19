@@ -19,7 +19,7 @@ const { isFetching, error, data } = useFetch(
           v-for="(blog, i) in data"
           :key="blog.createdAt"
           :index="data.length - 1 - i"
-          center-y even-odd
+          center-y even-odd safe-geometry
         >
           <BlogCard :blog="blog" />
         </ZScrollItem>
