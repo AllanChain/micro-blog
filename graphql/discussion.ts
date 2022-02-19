@@ -8,6 +8,13 @@ import sanitizeHtml from 'sanitize-html'
 import type { Discussion } from '../src/types'
 import { getSdk } from './sdk'
 
+const parse = (markdown: string): string => sanitizeHtml(
+  marked.parse(markdown),
+  {
+    allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
+  },
+)
+
 export async function getDiscussions(): Promise<Discussion[]> {
   const client = new GraphQLClient(
     'https://api.github.com/graphql',
@@ -29,7 +36,7 @@ export async function getDiscussions(): Promise<Discussion[]> {
             ?.filter(node => node?.author?.login === 'AllanChain')
             ?.flatMap(node => node
               ? [{
-                bodyHTML: sanitizeHtml(marked.parse(node.body)),
+                bodyHTML: parse(node.body),
                 createdAt: node.createdAt,
                 updatedAt: node.updatedAt,
                 reactionCount: node.reactions.totalCount + node.upvoteCount,
@@ -39,7 +46,7 @@ export async function getDiscussions(): Promise<Discussion[]> {
                     authorName: 'name' in node.author! ? node.author!.name ?? '' : '',
                     createdAt: node.createdAt,
                     updatedAt: node.updatedAt,
-                    bodyHTML: sanitizeHtml(marked.parse(node.body)),
+                    bodyHTML: parse(node.body),
                   }]
                   : [],
                 ) ?? [],
