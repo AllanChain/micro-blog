@@ -17,7 +17,13 @@
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "vite/client",
+    ],
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
-  "exclude": ["node_modules"]
+  "exclude": ["dist", "node_modules"]
 }

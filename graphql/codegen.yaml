@@ -1,7 +1,7 @@
 schema: https://docs.github.com/public/schema.docs.graphql
-documents: './graphql/discussion.gql'
+documents: './discussion.gql'
 generates:
-  graphql/sdk.ts:
+  sdk.ts:
     plugins:
       - typescript
       - typescript-operations

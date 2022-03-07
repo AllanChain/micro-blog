@@ -5,7 +5,7 @@ import * as yargs from 'yargs'
 import { config as dotenvConfig } from 'dotenv'
 import { marked } from 'marked'
 import sanitizeHtml from 'sanitize-html'
-import type { Discussion } from '../src/types'
+import type { Discussion } from '@acbits/utils'
 import { getSdk } from './sdk'
 
 const parse = (markdown: string): string => sanitizeHtml(
@@ -68,7 +68,7 @@ async function main() {
   }).argv
   const discussions = await getDiscussions()
   const years: string[] = []
-  const dist = pathJoin(__dirname, '..', argv.dist, 'data/year')
+  const dist = pathJoin(__dirname, '../app', argv.dist, 'data/year')
   await mkdir(dist, { recursive: true })
   for (const discussion of discussions) {
     years.push(discussion.year)

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { useFetch } from '@vueuse/core'
+import type { BlogEntries } from '@acbits/utils'
 import NavItems from './components/NavItems.vue'
 import ZScrollContainer from './components/ZScroll/ZScrollContainer.vue'
 import ZScrollItem from './components/ZScroll/ZScrollItem.vue'
 import BlogCard from './components/BlogCard.vue'
-import type { BlogEntries } from '~/types'
 
 // The plan is to fetch more years as the user scrolls down.
 

@@ -9,5 +9,5 @@ node_modules
 *.log
 
 graphql/sdk.ts
-public/data
+app/public/data
 graphql/.env
