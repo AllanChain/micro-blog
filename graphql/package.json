@@ -3,8 +3,8 @@
   "name": "@acbits/graphql",
   "scripts": {
     "gql-codegen": "graphql-codegen",
-    "data:public": "ts-node graphql/discussion.ts --dist public",
-    "data:dist": "ts-node graphql/discussion.ts --dist dist",
+    "data:public": "ts-node discussion.ts --dist public",
+    "data:dist": "ts-node discussion.ts --dist dist",
     "postinstall": "pnpm gql-codegen"
   },
   "dependencies": {
