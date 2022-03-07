@@ -30,7 +30,7 @@ watch(showDetailsPopup, (show) => {
     ref="divElement"
     relative
     w-80 max-w-full max-h-70vh p-4
-    overflow-hidden
+    overflow-hidden select-none
     prose="~ slate dark:invert"
     border="1 blue-500/50 rounded-md"
     bg="white/80 dark:gray-800/80"
