@@ -1,15 +1,23 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import type { MicroBlog } from '~/types'
+import { computed, ref, watch } from 'vue'
+import type { MicroBlog } from '@acbits/utils'
 
 const props = defineProps<{ blog: MicroBlog }>()
 
 const divElement = ref<HTMLDivElement>()
+const showDetailsPopup = ref(false)
 
 const showReadMore = computed(() => {
   if (!divElement.value)
     return false
   return divElement.value.clientHeight < divElement.value.scrollHeight
+})
+
+watch(showDetailsPopup, (show) => {
+  if (show)
+    document.body.style.overflow = 'hidden'
+  else
+    document.body.style.overflow = 'auto'
 })
 </script>
 
@@ -22,6 +30,7 @@ const showReadMore = computed(() => {
     prose="~ slate dark:invert"
     border="1 blue-500/50 rounded-md"
     bg="white/80 dark:gray-800/80"
+    @click="showDetailsPopup = true"
   >
     <div v-html="props.blog.bodyHTML" />
     <div
@@ -35,4 +44,20 @@ const showReadMore = computed(() => {
       Click to Read More
     </div>
   </div>
+  <Teleport to="body">
+    <div
+      v-if="showDetailsPopup"
+      fixed top-0 left-0 h-full w-full
+      bg="dark-100/40"
+      @click="showDetailsPopup = false"
+    >
+      <div
+        mx-auto px-4 py-4
+        w-md max-w-full h-full overflow-y-auto
+        bg="white dark:gray-800"
+      >
+        <div prose="~ slate dark:invert" v-html="props.blog.bodyHTML" />
+      </div>
+    </div>
+  </Teleport>
 </template>
