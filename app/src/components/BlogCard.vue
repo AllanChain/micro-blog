@@ -53,14 +53,28 @@ watch(showDetailsPopup, (show) => {
       v-if="showDetailsPopup"
       fixed top-0 left-0 h-full w-full
       bg="dark-100/40"
-      @click="showDetailsPopup = false"
+      @click.self="showDetailsPopup = false"
     >
       <div
-        mx-auto px-4 py-4
+        mx-auto
         w-md max-w-full h-full overflow-y-auto
         bg="white dark:gray-800"
       >
-        <div prose="~ slate dark:invert" v-html="props.blog.bodyHTML" />
+        <div
+          fixed w-full h-8 flex items-center
+          bg="white/95 dark:gray-800/95"
+        >
+          <div flex-1 />
+          <button
+            i-carbon-close text-2xl mr-2
+            @click="showDetailsPopup= false"
+          />
+        </div>
+        <div
+          px-4 pb-4 mt-8
+          prose="~ slate dark:invert"
+          v-html="props.blog.bodyHTML"
+        />
       </div>
     </div>
   </Teleport>
