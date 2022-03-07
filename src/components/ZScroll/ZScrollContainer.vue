@@ -1,6 +1,8 @@
 <script setup lang="ts">
 /* eslint-disable vue/no-setup-props-destructure */
 
+import { computed, onMounted, provide, ref } from 'vue'
+
 const {
   primaryPerspective = 100,
   itemYGap = 200,

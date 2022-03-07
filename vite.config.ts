@@ -3,9 +3,6 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
 import { presetAttributify, presetIcons } from 'unocss'
 import presetWind from '@unocss/preset-wind'
 import { presetTypography } from '@unocss/preset-typography'
@@ -20,25 +17,6 @@ export default defineConfig({
   plugins: [
     Vue({
       reactivityTransform: true,
-    }),
-
-    // https://github.com/hannoeru/vite-plugin-pages
-    Pages(),
-
-    // https://github.com/antfu/unplugin-auto-import
-    AutoImport({
-      imports: [
-        'vue',
-        'vue-router',
-        '@vueuse/core',
-        'vitest',
-      ],
-      dts: true,
-    }),
-
-    // https://github.com/antfu/vite-plugin-components
-    Components({
-      dts: true,
     }),
 
     // https://github.com/antfu/unocss
@@ -61,18 +39,7 @@ export default defineConfig({
   optimizeDeps: {
     include: [
       'vue',
-      'vue-router',
       '@vueuse/core',
     ],
-    exclude: [
-      'vue-demi',
-    ],
-  },
-
-  test: {
-    environment: 'jsdom',
-    deps: {
-      inline: ['@vue', '@vueuse', 'vue-demi'],
-    },
   },
 })

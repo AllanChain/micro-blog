@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Ref, StyleValue } from 'vue'
+import { computed, inject, onBeforeMount, onBeforeUnmount, watch } from 'vue'
 
 const props = defineProps<{
   index: number

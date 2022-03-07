@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed, ref } from 'vue'
 import type { MicroBlog } from '~/types'
 
 const props = defineProps<{ blog: MicroBlog }>()
