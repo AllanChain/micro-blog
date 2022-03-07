@@ -61,7 +61,7 @@ watch(showDetailsPopup, (show) => {
         bg="white dark:gray-800"
       >
         <div
-          fixed w-full h-8 flex items-center
+          fixed w-md max-w-full h-8 flex items-center
           bg="white/95 dark:gray-800/95"
         >
           <div flex-1 />
