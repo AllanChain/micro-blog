@@ -1,16 +1,20 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import type { MicroBlog } from '@acbits/utils'
 
 const props = defineProps<{ blog: MicroBlog }>()
 
 const divElement = ref<HTMLDivElement>()
+const showReadMore = ref(false)
 const showDetailsPopup = ref(false)
 
-const showReadMore = computed(() => {
-  if (!divElement.value)
-    return false
-  return divElement.value.clientHeight < divElement.value.scrollHeight
+watch(divElement, () => {
+  if (divElement.value) {
+    new ResizeObserver(() => {
+      if (divElement.value)
+        showReadMore.value = divElement.value.clientHeight < divElement.value.scrollHeight
+    }).observe(divElement.value)
+  }
 })
 
 watch(showDetailsPopup, (show) => {
