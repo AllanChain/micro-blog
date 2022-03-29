@@ -148,9 +148,9 @@
     "replies": []
   },
   {
-    "bodyHTML": "<p>当你遇到一堆来自 JAX 的 nan 的时候，很可能意味着一天的美好也即将变成 nan\n​\ncode 半上午，debug 一整天。​迷幻 JAX 给我整了 3 种导致 nan 的原因，解决了两个绕过（妥协）了一个，解决的里面也只有一个是大概知道为什么的\n​\n​结论：人生苦短，我用 Python，但尽量不要盲目自信地靠近 JAX 等 frustration 指数爆棚的库 🙃</p>\n<p><img src=\"https://user-images.githubusercontent.com/36528777/160425067-929daaac-3837-4db7-bf10-92a6c1d2c382.png\" alt=\"2022-03-28_22-36.png\" /></p>\n",
+    "bodyHTML": "<p>当你遇到一堆来自 JAX 的 nan 的时候，很可能意味着一天的美好也即将变成 nan</p>\n<p>code 半上午，debug 一整天。​迷幻 JAX 给我整了 3 种导致 nan 的原因，解决了两个绕过（妥协）了一个，解决的里面也只有一个是大概知道为什么的</p>\n<p>​结论：人生苦短，我用 Python，但尽量不要盲目自信地靠近 JAX 等 frustration 指数爆棚的库 🙃</p>\n<p><img src=\"https://user-images.githubusercontent.com/36528777/160425067-929daaac-3837-4db7-bf10-92a6c1d2c382.png\" alt=\"2022-03-28_22-36.png\" /></p>\n",
     "createdAt": "2022-03-28T14:50:12Z",
-    "updatedAt": "2022-03-28T14:50:22Z",
+    "updatedAt": "2022-03-29T03:26:07Z",
     "reactionCount": 1,
     "replies": []
   }
