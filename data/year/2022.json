@@ -152,6 +152,14 @@
     "createdAt": "2022-03-28T14:50:12Z",
     "updatedAt": "2022-03-29T03:26:07Z",
     "reactionCount": 1,
-    "replies": []
+    "replies": [
+      {
+        "authorId": "AllanChain",
+        "authorName": "Allan Chain",
+        "createdAt": "2022-03-29T03:42:29Z",
+        "updatedAt": "2022-03-29T03:42:29Z",
+        "bodyHTML": "<p>JAX: 我摆烂了，我就 nan 了。属于为啥，你慢慢猜吧！</p>\n"
+      }
+    ]
   }
 ]
