@@ -159,6 +159,13 @@
         "createdAt": "2022-03-29T03:42:29Z",
         "updatedAt": "2022-03-29T03:42:29Z",
         "bodyHTML": "<p>JAX: 我摆烂了，我就 nan 了。属于为啥，你慢慢猜吧！</p>\n"
+      },
+      {
+        "authorId": "AllanChain",
+        "authorName": "Allan Chain",
+        "createdAt": "2022-03-29T14:58:48Z",
+        "updatedAt": "2022-03-29T14:58:48Z",
+        "bodyHTML": "<p>后续：辛辛苦苦在 CPU 上解决了 nan，把其他的计算 bug 也调好了，结果提交 GPU 任务之后又算出来一堆 nan 😱</p>\n"
       }
     ]
   },
