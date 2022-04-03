@@ -166,6 +166,13 @@
         "createdAt": "2022-03-29T14:58:48Z",
         "updatedAt": "2022-03-29T14:58:48Z",
         "bodyHTML": "<p>后续：辛辛苦苦在 CPU 上解决了 nan，把其他的计算 bug 也调好了，结果提交 GPU 任务之后又算出来一堆 nan 😱</p>\n"
+      },
+      {
+        "authorId": "AllanChain",
+        "authorName": "Allan Chain",
+        "createdAt": "2022-04-03T12:39:54Z",
+        "updatedAt": "2022-04-03T12:39:54Z",
+        "bodyHTML": "<p>后后续：新版本 JAX 在 CPU 上的 NaN 和 JAX 在 GPU 上 NaN 的原因是一样的，都是 <code>norm</code> of 0 的问题</p>\n"
       }
     ]
   },
