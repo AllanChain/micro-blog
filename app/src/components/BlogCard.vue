@@ -62,20 +62,21 @@ watch(showDetailsPopup, (show) => {
         bg="white dark:gray-800"
       >
         <div
-          fixed w-md max-w-full h-8 flex items-center
-          bg="white/95 dark:gray-800/95"
-        >
-          <div flex-1 />
-          <button
-            i-carbon-close text-2xl mr-2
-            @click="showDetailsPopup= false"
-          />
-        </div>
-        <div
           px-4 pb-4 mt-8
           prose="~ slate dark:invert"
         >
           <BlogContent :blog="blog" />
+        </div>
+        <div
+          fixed top-0 w-md max-w-full h-8 flex items-center
+          bg="white/95 dark:gray-800/95"
+        >
+          <div flex-1 />
+          <button
+            i-carbon-close mr-2
+            text="2xl gray-800 dark:gray-400"
+            @click="showDetailsPopup= false"
+          />
         </div>
       </div>
     </div>
