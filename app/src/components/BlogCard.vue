@@ -39,6 +39,16 @@ watch(showDetailsPopup, (show) => {
   >
     <BlogContent :blog="blog" />
     <div
+      v-if="blog.reactionCount > 1"
+      class="top-4 -right-8"
+      absolute w-30 text-center
+      transform rotate-45
+      bg="green-500 dark:green-700"
+      border="3 green-600 dark:green-800"
+    >
+      +{{ blog.reactionCount - 1 }}
+    </div>
+    <div
       v-if="showReadMore"
       absolute bottom-0 left-0
       pb-2 pt-8 w-full text-center
