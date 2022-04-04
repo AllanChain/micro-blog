@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import type { MicroBlog } from '@acbits/utils'
+import BlogContent from './BlogContent.vue'
 
-const props = defineProps<{ blog: MicroBlog }>()
+defineProps<{ blog: MicroBlog }>()
 
 const divElement = ref<HTMLDivElement>()
 const showReadMore = ref(false)
@@ -36,7 +37,7 @@ watch(showDetailsPopup, (show) => {
     bg="white/80 dark:gray-800/80"
     @click="showDetailsPopup = true"
   >
-    <div v-html="props.blog.bodyHTML" />
+    <BlogContent :blog="blog" />
     <div
       v-if="showReadMore"
       absolute bottom-0 left-0
@@ -73,8 +74,9 @@ watch(showDetailsPopup, (show) => {
         <div
           px-4 pb-4 mt-8
           prose="~ slate dark:invert"
-          v-html="props.blog.bodyHTML"
-        />
+        >
+          <BlogContent :blog="blog" />
+        </div>
       </div>
     </div>
   </Teleport>

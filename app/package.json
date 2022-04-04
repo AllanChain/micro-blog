@@ -10,6 +10,7 @@
     "@acbits/utils": "workspace:^1.0.0",
     "@unocss/reset": "^0.27.2",
     "@vueuse/core": "^7.7.1",
+    "light-date": "^1.2.0",
     "vue": "^3.2.31"
   },
   "devDependencies": {
