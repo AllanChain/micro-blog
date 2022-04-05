@@ -42,8 +42,7 @@ const formatDate = (date: string) => lightDateFormat(
   <div
     v-for="reply in blog.replies"
     :key="reply.createdAt"
-    border="1 bluegray-500 dashed"
-    my-1 p-1
+    my-1 py-1 px-2
   >
     <div flex text="gray-500 sm">
       <div font-bold mr-2>
@@ -51,6 +50,12 @@ const formatDate = (date: string) => lightDateFormat(
       </div>
       <div>{{ formatDate(reply.createdAt) }}</div>
     </div>
-    <div v-html="reply.bodyHTML" />
+    <div class="blog-comment" text-sm v-html="reply.bodyHTML" />
   </div>
 </template>
+
+<style>
+.blog-comment p {
+  margin: 0.5em 0 !important;
+}
+</style>
