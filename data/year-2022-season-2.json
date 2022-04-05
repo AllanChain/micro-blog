@@ -5,5 +5,12 @@
     "updatedAt": "2022-04-05T02:02:56Z",
     "reactionCount": 1,
     "replies": []
+  },
+  {
+    "bodyHTML": "<p>本来还想弄个 GitHub Action 每三个月自动新建 Discussion 然后改 pin，但是发现好像 GitHub 的 GraphQL API 只能新建 discussion 不能 pin discussion，那就只能算了。</p>\n<p>接下来计划的主要功能就是 timeline fast seeking 了，这个就更加不急了，毕竟现在的数量并不多 🕊️🕊️🕊️</p>\n",
+    "createdAt": "2022-04-05T03:51:56Z",
+    "updatedAt": "2022-04-05T03:52:06Z",
+    "reactionCount": 1,
+    "replies": []
   }
 ]
