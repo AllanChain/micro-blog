@@ -27,7 +27,7 @@ const formatDate = (date: string) => lightDateFormat(
       </div>
     </div>
   </div>
-  <div block v-html="blog.bodyHTML" />
+  <div class="blog-content" block v-html="blog.bodyHTML" />
   <div flex items-center>
     <div dash-divider />
     <div>
@@ -55,7 +55,7 @@ const formatDate = (date: string) => lightDateFormat(
 </template>
 
 <style>
-.blog-comment p {
+.blog-content p, .blog-comment p {
   margin: 0.5em 0 !important;
 }
 </style>
