@@ -1,5 +1,6 @@
 [
   {
+    "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2504649",
     "bodyHTML": "<p>本来是打算一年开一个 discussion 的，但发现这样可能会在一个 discussion 里有很多 comment，比较麻烦。所以要不还是一个季度一个 discussion 好了。正好 4 月份刚出头。</p>\n",
     "createdAt": "2022-04-05T02:02:46Z",
     "updatedAt": "2022-04-05T02:02:56Z",
@@ -7,6 +8,7 @@
     "replies": []
   },
   {
+    "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2505113",
     "bodyHTML": "<p>本来还想弄个 GitHub Action 每三个月自动新建 Discussion 然后改 pin，但是发现好像 GitHub 的 GraphQL API 只能新建 discussion 不能 pin discussion，那就只能算了。</p>\n<p>接下来计划的主要功能就是 timeline fast seeking 了，这个就更加不急了，毕竟现在的数量并不多 🕊️🕊️🕊️</p>\n",
     "createdAt": "2022-04-05T03:51:56Z",
     "updatedAt": "2022-04-05T03:52:06Z",
@@ -14,6 +16,7 @@
     "replies": []
   },
   {
+    "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2505136",
     "bodyHTML": "<p>不过还是不得不说 UnoCSS 还是不太好用，我自己新加的 custom variants 竟然直接被“吞”了，整半天发现是它没有被优先 respect。为了避免冲突我只能在前面加了个 <code>my-</code> 前缀。还是太丑了，差评。</p>\n",
     "createdAt": "2022-04-05T03:55:40Z",
     "updatedAt": "2022-04-05T03:55:50Z",
