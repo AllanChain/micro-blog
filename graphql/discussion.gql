@@ -3,6 +3,8 @@ query microBlogs {
     discussions(categoryId: "DIC_kwDOGw6A_84CA774", first: 10) {
       nodes {
         title
+        createdAt
+        updatedAt
         comments(first: 100) {
           nodes {
             author {

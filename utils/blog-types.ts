@@ -16,7 +16,9 @@ export interface BlogReply {
 
 export interface Discussion {
   title: string
-  year: string
+  slug: string
+  createdAt: string
+  updatedAt: string
   blogs: MicroBlog[]
 }
 

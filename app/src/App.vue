@@ -9,7 +9,7 @@ import BlogCard from './components/BlogCard.vue'
 // The plan is to fetch more years as the user scrolls down.
 
 const { isFetching, error, data } = useFetch(
-  'data/year/2022.json',
+  'data/micro-blogs-of-year-2022.json',
 ).json<BlogEntries>()
 </script>
 

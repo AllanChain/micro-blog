@@ -6,6 +6,7 @@ import { config as dotenvConfig } from 'dotenv'
 import { marked } from 'marked'
 import sanitizeHtml from 'sanitize-html'
 import type { Discussion } from '@acbits/utils'
+import GitHubSlugger from 'github-slugger'
 import { getSdk } from './sdk'
 
 const parse = (markdown: string): string => sanitizeHtml(
@@ -25,13 +26,16 @@ export async function getDiscussions(): Promise<Discussion[]> {
     },
   )
   const sdk = getSdk(client)
+  const slugger = new GitHubSlugger()
   const data = await sdk.microBlogs()
   return data.repository?.discussions.nodes
     ?.flatMap((node) => {
-      return (node !== null && node?.title?.startsWith('Micro Blogs of Year'))
+      return node !== null
         ? {
           title: node.title,
-          year: node.title.split(' ')[4],
+          createdAt: node.createdAt,
+          updatedAt: node.updatedAt,
+          slug: slugger.slug(node.title),
           blogs: node.comments.nodes
             ?.filter(node => node?.author?.login === 'AllanChain')
             ?.flatMap(node => node
@@ -67,16 +71,16 @@ async function main() {
     },
   }).argv
   const discussions = await getDiscussions()
-  const years: string[] = []
-  const dist = pathJoin(__dirname, '../app', argv.dist, 'data/year')
+  const seasons: string[] = []
+  const dist = pathJoin(__dirname, '../app', argv.dist, 'data')
   await mkdir(dist, { recursive: true })
   for (const discussion of discussions) {
-    years.push(discussion.year)
-    const filePath = pathJoin(dist, `${discussion.year}.json`)
+    seasons.push(discussion.slug)
+    const filePath = pathJoin(dist, `${discussion.slug}.json`)
     await writeFile(filePath, JSON.stringify(discussion.blogs, null, 2))
   }
   await writeFile(
-    pathJoin(dist, '..', 'years.json'), JSON.stringify(years, null, 2),
+    pathJoin(dist, 'index.json'), JSON.stringify(seasons, null, 2),
   )
 }
 
