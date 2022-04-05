@@ -34,7 +34,7 @@ watch(showDetailsPopup, (show) => {
     overflow-hidden select-none
     prose="~ slate dark:invert"
     border="1 blue-500/50 rounded-md"
-    bg="white/80 dark:gray-800/80"
+    bg="white/90 dark:gray-800/90"
     @click="showDetailsPopup = true"
   >
     <BlogContent :blog="blog" />
