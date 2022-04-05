@@ -1,4 +1,5 @@
 export interface MicroBlog {
+  url: string
   bodyHTML: string
   createdAt: string
   updatedAt: string

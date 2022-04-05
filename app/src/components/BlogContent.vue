@@ -28,6 +28,17 @@ const formatDate = (date: string) => lightDateFormat(
     </div>
   </div>
   <div block v-html="blog.bodyHTML" />
+  <div flex items-center>
+    <div dash-divider />
+    <div>
+      Comment on
+    </div>
+    <a
+      :href="blog.url" target="_blank" rel="noreferrer noopener"
+      mx-1 icon-btn i-carbon-logo-github
+    />
+    <div dash-divider />
+  </div>
   <div
     v-for="reply in blog.replies"
     :key="reply.createdAt"

@@ -40,6 +40,7 @@ export async function getDiscussions(): Promise<Discussion[]> {
             ?.filter(node => node?.author?.login === 'AllanChain')
             ?.flatMap(node => node
               ? [{
+                url: node.url,
                 bodyHTML: parse(node.body),
                 createdAt: node.createdAt,
                 updatedAt: node.updatedAt,
