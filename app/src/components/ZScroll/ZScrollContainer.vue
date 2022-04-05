@@ -33,7 +33,11 @@ provide('remove-item-index', (index: number) => {
 
 const scrollY = ref(0)
 const currentItemIndex = computed(() => {
-  return Math.floor(scrollY.value / itemYGap)
+  const floatIndex = scrollY.value / itemYGap
+  const roundedIndex = Math.round(floatIndex)
+  // We stick to previous index if not close enough to the next one
+  if (Math.abs(roundedIndex - floatIndex) < 0.01) return roundedIndex
+  return Math.floor(floatIndex)
 })
 provide('current-item-index', currentItemIndex)
 watchEffect(() => {
