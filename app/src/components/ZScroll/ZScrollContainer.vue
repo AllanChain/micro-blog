@@ -1,7 +1,7 @@
 <script setup lang="ts">
 /* eslint-disable vue/no-setup-props-destructure */
 
-import { computed, onMounted, provide, ref } from 'vue'
+import { computed, onMounted, provide, ref, watchEffect } from 'vue'
 
 const {
   primaryPerspective = 100,
@@ -11,6 +11,9 @@ const {
   primaryPerspective?: number
   itemYGap?: number
   itemZGap?: number
+}>()
+const emit = defineEmits<{
+  (e: 'endReached'): void
 }>()
 
 provide('item-z-gap', itemZGap)
@@ -33,6 +36,10 @@ const currentItemIndex = computed(() => {
   return Math.floor(scrollY.value / itemYGap)
 })
 provide('current-item-index', currentItemIndex)
+watchEffect(() => {
+  if (currentItemIndex.value === itemsCount.value - 1)
+    emit('endReached')
+})
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
