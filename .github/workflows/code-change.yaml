@@ -24,6 +24,8 @@ jobs:
         with:
           version: latest
           run_install: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm data:public
         working-directory: graphql
         env:

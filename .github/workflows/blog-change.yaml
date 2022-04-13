@@ -28,6 +28,8 @@ jobs:
           version: latest
           run_install: |
             cwd: graphql
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm data:dist
         working-directory: graphql
         env:
