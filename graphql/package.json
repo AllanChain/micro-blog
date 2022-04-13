@@ -2,7 +2,7 @@
   "private": true,
   "name": "@acbits/graphql",
   "scripts": {
-    "gql-codegen": "graphql-codegen",
+    "gql-codegen": "graphql-codegen -r dotenv/config",
     "data:public": "ts-node discussion.ts --dist public",
     "data:dist": "ts-node discussion.ts --dist dist",
     "postinstall": "pnpm gql-codegen"
