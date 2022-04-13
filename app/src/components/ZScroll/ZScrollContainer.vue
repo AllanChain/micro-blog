@@ -1,17 +1,12 @@
 <script setup lang="ts">
-/* eslint-disable vue/no-setup-props-destructure */
-
 import { computed, onMounted, provide, ref, watchEffect } from 'vue'
 
-const {
-  primaryPerspective = 100,
-  itemYGap = 200,
-  itemZGap = 150,
-} = defineProps<{
-  primaryPerspective?: number
-  itemYGap?: number
-  itemZGap?: number
-}>()
+// We need default props here, so we are using runtime declaration
+const { primaryPerspective, itemYGap, itemZGap } = defineProps({
+  primaryPerspective: { type: Number, default: 100 },
+  itemYGap: { type: Number, default: 200 },
+  itemZGap: { type: Number, default: 150 },
+})
 const emit = defineEmits<{
   (e: 'endReached'): void
 }>()
@@ -20,7 +15,8 @@ provide('item-z-gap', itemZGap)
 
 const allItemIndices = ref<number[]>([])
 const itemsCount = computed(() => {
-  if (allItemIndices.value.length === 0) return 0
+  if (allItemIndices.value.length === 0)
+    return 0
   return Math.max(...allItemIndices.value) + 1
 })
 
@@ -36,7 +32,8 @@ const currentItemIndex = computed(() => {
   const floatIndex = scrollY.value / itemYGap
   const roundedIndex = Math.round(floatIndex)
   // We stick to previous index if not close enough to the next one
-  if (Math.abs(roundedIndex - floatIndex) < 0.01) return roundedIndex
+  if (Math.abs(roundedIndex - floatIndex) < 0.01)
+    return roundedIndex
   return Math.floor(floatIndex)
 })
 provide('current-item-index', currentItemIndex)
