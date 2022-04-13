@@ -12,7 +12,9 @@ import { getSdk } from './sdk'
 const parse = (markdown: string): string => sanitizeHtml(
   marked.parse(markdown),
   {
-    allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
+    allowedTags: sanitizeHtml.defaults.allowedTags.concat([
+      'img', 'details', 'summary',
+    ]),
   },
 )
 
