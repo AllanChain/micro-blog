@@ -1,7 +1,4 @@
-schema:
-  - https://api.github.com/graphql:
-      headers:
-        Authorization: bearer ${GITHUB_TOKEN}
+schema: https://docs.github.com/public/schema.docs.graphql
 documents: './discussion.gql'
 generates:
   sdk.ts:
