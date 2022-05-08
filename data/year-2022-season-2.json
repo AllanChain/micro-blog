@@ -92,6 +92,14 @@
     "createdAt": "2022-05-08T09:19:22Z",
     "updatedAt": "2022-05-08T09:19:22Z",
     "reactionCount": 1,
-    "replies": []
+    "replies": [
+      {
+        "authorId": "AllanChain",
+        "authorName": "Allan Chain",
+        "createdAt": "2022-05-08T09:23:13Z",
+        "updatedAt": "2022-05-08T09:23:13Z",
+        "bodyHTML": "<p>看了一下他们要填的表单：这么形式主义的政策不群起反抗才怪</p>\n"
+      }
+    ]
   }
 ]
