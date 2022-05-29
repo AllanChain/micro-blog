@@ -8,18 +8,18 @@
   },
   "dependencies": {
     "@acbits/utils": "workspace:^1.0.0",
-    "@unocss/reset": "^0.31.2",
-    "@vueuse/core": "^8.2.5",
+    "@unocss/reset": "^0.35.1",
+    "@vueuse/core": "^8.5.0",
     "light-date": "^1.2.0",
-    "vue": "^3.2.32"
+    "vue": "^3.2.36"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.3",
-    "@unocss/preset-typography": "^0.31.2",
-    "@unocss/preset-wind": "^0.31.2",
-    "@vitejs/plugin-vue": "^2.3.1",
-    "typescript": "^4.6.2",
-    "unocss": "^0.31.2",
-    "vite": "^2.9.1"
+    "@iconify-json/carbon": "^1.1.5",
+    "@unocss/preset-typography": "^0.35.1",
+    "@unocss/preset-wind": "^0.35.1",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.7.2",
+    "unocss": "^0.35.1",
+    "vite": "^2.9.9"
   }
 }
