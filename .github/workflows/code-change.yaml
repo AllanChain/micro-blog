@@ -13,8 +13,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '16.x'
-      - run: |
-          curl https://docs.github.com/public/schema.docs.graphql
       - name: Cache pnpm modules
         uses: actions/cache@v2
         with:
@@ -30,7 +28,7 @@ jobs:
         working-directory: graphql
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: pnpm build -- --base=/micro-blog/
+      - run: pnpm build --base=/micro-blog/
         working-directory: app
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
