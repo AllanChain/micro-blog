@@ -47,6 +47,9 @@ export async function getDiscussions(): Promise<Discussion[]> {
                 createdAt: node.createdAt,
                 updatedAt: node.updatedAt,
                 reactionCount: node.reactions.totalCount + node.upvoteCount,
+                hasMyReaction: node.reactions.nodes?.some(
+                  node => node?.user?.login === 'AllanChain',
+                ) || false,
                 replies: node.replies.nodes?.flatMap(node => node
                   ? [{
                     authorId: node.author!.login ?? '',

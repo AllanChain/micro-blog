@@ -43,8 +43,10 @@ watch(showDetailsPopup, (show) => {
       class="top-4 -right-8"
       absolute w-30 text-center
       transform rotate-45
-      bg="green-500 dark:green-700"
-      border="3 green-600 dark:green-800"
+      border-3
+      :class="blog.hasMyReaction
+        ? 'bg-green-500 dark:bg-green-700 border-green-600 dark:border-green-800'
+        : 'bg-blue-500 dark:bg-blue-700 border-blue-600 dark:border-blue-800'"
     >
       +{{ blog.reactionCount - 1 }}
     </div>

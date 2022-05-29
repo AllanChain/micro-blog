@@ -15,8 +15,13 @@ query microBlogs {
             createdAt
             updatedAt
             upvoteCount
-            reactions {
+            reactions (first: 4) {
               totalCount
+              nodes {
+                user {
+                  login
+                }
+              }
             }
             replies(first: 20) {
               nodes {

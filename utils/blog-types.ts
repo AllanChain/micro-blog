@@ -4,6 +4,7 @@ export interface MicroBlog {
   createdAt: string
   updatedAt: string
   reactionCount: number
+  hasMyReaction: boolean
   replies: BlogReply[]
 }
 
