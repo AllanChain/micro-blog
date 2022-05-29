@@ -5,6 +5,7 @@
     "createdAt": "2022-01-31T13:05:16Z",
     "updatedAt": "2022-01-31T13:05:26Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": [
       {
         "authorId": "AllanChain",
@@ -21,6 +22,7 @@
     "createdAt": "2022-02-04T04:17:47Z",
     "updatedAt": "2022-02-04T04:17:58Z",
     "reactionCount": 2,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -29,6 +31,7 @@
     "createdAt": "2022-02-15T03:27:45Z",
     "updatedAt": "2022-02-15T03:27:55Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -37,6 +40,7 @@
     "createdAt": "2022-02-15T03:35:03Z",
     "updatedAt": "2022-02-15T03:35:14Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -45,6 +49,7 @@
     "createdAt": "2022-02-17T11:08:26Z",
     "updatedAt": "2022-02-17T11:08:37Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -53,6 +58,7 @@
     "createdAt": "2022-02-17T12:46:10Z",
     "updatedAt": "2022-02-18T04:59:07Z",
     "reactionCount": 2,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -61,6 +67,7 @@
     "createdAt": "2022-02-19T11:30:25Z",
     "updatedAt": "2022-02-19T11:30:37Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -69,6 +76,7 @@
     "createdAt": "2022-02-20T04:08:33Z",
     "updatedAt": "2022-02-20T04:08:44Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -77,6 +85,7 @@
     "createdAt": "2022-02-20T15:02:13Z",
     "updatedAt": "2022-02-20T15:02:23Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -85,6 +94,7 @@
     "createdAt": "2022-02-20T15:04:01Z",
     "updatedAt": "2022-02-20T15:04:12Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -93,6 +103,7 @@
     "createdAt": "2022-02-20T15:05:43Z",
     "updatedAt": "2022-02-21T04:26:56Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -101,6 +112,7 @@
     "createdAt": "2022-02-27T07:44:27Z",
     "updatedAt": "2022-02-27T07:44:39Z",
     "reactionCount": 2,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -109,6 +121,7 @@
     "createdAt": "2022-02-28T12:49:00Z",
     "updatedAt": "2022-02-28T12:49:12Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -117,6 +130,7 @@
     "createdAt": "2022-02-28T12:50:14Z",
     "updatedAt": "2022-02-28T12:50:25Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -125,6 +139,7 @@
     "createdAt": "2022-03-01T14:36:11Z",
     "updatedAt": "2022-03-01T14:36:28Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -133,6 +148,7 @@
     "createdAt": "2022-03-06T14:47:21Z",
     "updatedAt": "2022-03-07T06:58:06Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -141,6 +157,7 @@
     "createdAt": "2022-03-12T04:22:37Z",
     "updatedAt": "2022-03-12T04:22:47Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -149,6 +166,7 @@
     "createdAt": "2022-03-15T14:01:56Z",
     "updatedAt": "2022-03-15T14:02:06Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -157,6 +175,7 @@
     "createdAt": "2022-03-15T14:08:49Z",
     "updatedAt": "2022-03-15T14:09:00Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -165,6 +184,7 @@
     "createdAt": "2022-03-26T11:51:29Z",
     "updatedAt": "2022-03-26T11:51:39Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -173,6 +193,7 @@
     "createdAt": "2022-03-28T14:50:12Z",
     "updatedAt": "2022-03-29T03:26:07Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": [
       {
         "authorId": "AllanChain",
@@ -203,6 +224,7 @@
     "createdAt": "2022-03-29T14:56:50Z",
     "updatedAt": "2022-03-29T14:57:01Z",
     "reactionCount": 2,
+    "hasMyReaction": false,
     "replies": []
   },
   {
@@ -211,6 +233,7 @@
     "createdAt": "2022-03-31T10:29:05Z",
     "updatedAt": "2022-03-31T10:29:16Z",
     "reactionCount": 1,
+    "hasMyReaction": false,
     "replies": []
   }
 ]
