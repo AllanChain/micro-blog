@@ -146,5 +146,14 @@
     "reactionCount": 1,
     "hasMyReaction": false,
     "replies": []
+  },
+  {
+    "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-3000529",
+    "bodyHTML": "<p>Rust 实在是不适合玩 GUI，除非它能把 <code>target/</code> 目录缩小一下，否则……</p>\n<p>Rust is really not suitable for playing around with GUI programs unless it can shrink the <code>target/</code> directory a bit. Otherwise ......</p>\n<p><img src=\"https://user-images.githubusercontent.com/36528777/174988756-1756b8c6-8466-4855-ac8a-f6f2a834481f.png\" alt=\"heaviest-rust-target\" /></p>\n",
+    "createdAt": "2022-06-22T09:01:20Z",
+    "updatedAt": "2022-06-22T09:01:25Z",
+    "reactionCount": 1,
+    "hasMyReaction": false,
+    "replies": []
   }
 ]
