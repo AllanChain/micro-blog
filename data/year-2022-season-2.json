@@ -3,7 +3,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2504649",
     "bodyHTML": "<p>本来是打算一年开一个 discussion 的，但发现这样可能会在一个 discussion 里有很多 comment，比较麻烦。所以要不还是一个季度一个 discussion 好了。正好 4 月份刚出头。</p>\n",
     "createdAt": "2022-04-05T02:02:46Z",
-    "updatedAt": "2022-04-05T02:02:56Z",
+    "updatedAt": "2022-06-07T18:22:42Z",
     "reactionCount": 1,
     "hasMyReaction": false,
     "replies": []
@@ -12,7 +12,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2505113",
     "bodyHTML": "<p>本来还想弄个 GitHub Action 每三个月自动新建 Discussion 然后改 pin，但是发现好像 GitHub 的 GraphQL API 只能新建 discussion 不能 pin discussion，那就只能算了。</p>\n<p>接下来计划的主要功能就是 timeline fast seeking 了，这个就更加不急了，毕竟现在的数量并不多 🕊️🕊️🕊️</p>\n",
     "createdAt": "2022-04-05T03:51:56Z",
-    "updatedAt": "2022-04-05T03:52:06Z",
+    "updatedAt": "2022-06-07T18:22:38Z",
     "reactionCount": 1,
     "hasMyReaction": false,
     "replies": []
@@ -21,7 +21,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2505136",
     "bodyHTML": "<p>不过还是不得不说 UnoCSS 还是不太好用，我自己新加的 custom variants 竟然直接被“吞”了，整半天发现是它没有被优先 respect。为了避免冲突我只能在前面加了个 <code>my-</code> 前缀。还是太丑了，差评。</p>\n",
     "createdAt": "2022-04-05T03:55:40Z",
-    "updatedAt": "2022-04-05T03:55:50Z",
+    "updatedAt": "2022-06-07T18:22:42Z",
     "reactionCount": 1,
     "hasMyReaction": false,
     "replies": []
@@ -30,7 +30,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2505971",
     "bodyHTML": "<p>北京工地大学“无图纸施工”翻车事件：</p>\n<blockquote>\n<p>楼主：校园网全面崩溃。</p>\n<p>鸡蒜中心：电教南侧施工把校园网光缆挖断了，正在抢修。</p>\n</blockquote>\n<p>Why don't they even know that there are optical fiber cables underground?</p>\n",
     "createdAt": "2022-04-05T07:24:09Z",
-    "updatedAt": "2022-04-05T07:24:20Z",
+    "updatedAt": "2022-06-22T08:49:24Z",
     "reactionCount": 2,
     "hasMyReaction": false,
     "replies": []
@@ -39,7 +39,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2528397",
     "bodyHTML": "<p>偶然间，我得以重新审视人类文明是有限的这一问题。虽然每次谈到太阳寿命的时候都会提到，但这次许甫荣教授给出的估计是五千年。虽然大概率是随口一说，但那种一晃眼已是半百的茫然与失落感还是很强烈。</p>\n<p>对个人来说，能够找到自己的价值所在并尽力实践，也大概能够死而无憾了。可人类文明的价值是什么呢？我们应该往何处努力呢？人类文明怎样才能死而无憾呢？这大概是更大尺度的茫然吧！</p>\n",
     "createdAt": "2022-04-08T05:01:00Z",
-    "updatedAt": "2022-04-08T05:01:00Z",
+    "updatedAt": "2022-06-22T08:49:19Z",
     "reactionCount": 2,
     "hasMyReaction": false,
     "replies": [
@@ -47,14 +47,14 @@
         "authorId": "AllanChain",
         "authorName": "Allan Chain",
         "createdAt": "2022-04-08T12:47:35Z",
-        "updatedAt": "2022-04-08T12:47:35Z",
+        "updatedAt": "2022-06-22T08:49:19Z",
         "bodyHTML": "<p>或者我们换个方式讲这个问题。</p>\n<p>好不容易辛辛苦苦多少年，给人生的一件件事情安上了意义，给各种研究安上了意义。但在这一视角下，这些寻找意义所费的努力似乎都打了水漂。</p>\n<p>概括地来说，我相信 make the world a better place 是大部分工作的一项重要意义所在。可是在有限的人类文明寿命里，过得更好又算什么呢？就像一个个体的寿命里，吃好喝好固然有一席之地，但如果止于吃好喝好，必被认为是碌碌无为之辈。</p>\n<p>做研究也是一样，除了改善人类生活，把各种东西研究得再清楚还有什么意义呢？人类文明消亡之后又不见得会有继承。</p>\n<p>似乎给所有事情安上一个意义的行为是没有意义的？</p>\n"
       },
       {
         "authorId": "AllanChain",
         "authorName": "Allan Chain",
         "createdAt": "2022-04-12T13:02:40Z",
-        "updatedAt": "2022-04-12T13:02:40Z",
+        "updatedAt": "2022-06-22T08:50:20Z",
         "bodyHTML": "<p>我 propose 一个想法。如果我们乐观地认为现在依然是人类文明的青年期，也就是说当前还是向未来“密集”“投资”的时期，那不妨认为现在的工作的意义都是让未来真正面对文明灭亡的时候，能够有想法、有能力作出选择并付诸行动；或者是使得人类的文明更加健壮，延迟文明灭亡的时刻。</p>\n<p>其实整个人类文明和个人的生命也是有很多区别的。比如人的个体的寿命是有限的，可以认为没有人能活过 150 岁；但人类文明的寿命是可以延长的，至少我们是可以降低人类文明毁于战争和瘟疫的可能性，死亡的威胁也不像个体一样时时悬于头顶。而且人类的死亡已有众多的借鉴，但整个人类文明的灭亡到现在为止尚无先例，仅有一些古文明衰亡的史料，也难以形成系统的理论。</p>\n"
       }
     ]
@@ -63,7 +63,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2558795",
     "bodyHTML": "<p>今天应景，讨论一下\"平权\"问题。</p>\n<details>\n<summary>《应景》</summary>\n\n<p>近日部分“女权”又掀起波澜。详见</p>\n<ul>\n<li><a href=\"https://news.ifeng.com/c/8F9l6XpQF74\">https://news.ifeng.com/c/8F9l6XpQF74</a></li>\n<li><a href=\"https://bbs.pku.edu.cn/v2/post-read.php?bid=251&amp;threadid=18262738\">https://bbs.pku.edu.cn/v2/post-read.php?bid=251&amp;threadid=18262738</a></li>\n</ul>\n<p>本人的朋友圈也未幸免 🙃</p>\n</details>\n\n<p>事情的起因可以说十分荒谬，这里不多评说。</p>\n<p>我还是觉得“女权”问题之所以停留在性别层面，还是只徘徊在身边的故事之中，没有放到更大的背景中看。（当然我这条肯定不会同步到朋友圈，一是这么说有些激进和危险，二是我对这些想法也不是十分肯定的态度）</p>\n<p>我觉得不妨从新旧的冲突角度看问题。</p>\n<p>就比如之前的丰县事件，是旧的野蛮社会和现代社会的脱轨，两相对比才显得格外令人震惊。如果此事发生在封建社会，大概没人会觉得<strong>奇怪</strong>。可以把这部分归结到城乡发展问题之中。我认为城乡发展问题占据了本国平权问题一半以上的比重，所以平权问题绕不开城乡发展问题。在互联网上对着能够在互联网上打字发言的人说，就把自己很大地局限了。可悲的是我们面向不识字的人的主要宣传渠道（如短视频）似乎又被低质量的、错误的内容占领了。</p>\n<p>当然在现代社会中，旧的家庭组织形式与现代分工关系的冲突也导致了很多平权方面的问题。最主要的，也是最近很火的，是生育问题。新生命的孕育、诞生、成长都没有很好的解决方案，很多家庭甚至需要老一辈人进行照料。更不要说还有吸血鬼从中牟取大量非道德的利润，使得问题更加棘手。更加具体的我也无从了解便不多说。</p>\n<p>争取平权还是要讲方法。在中国学习一些西方国家的方法效率其实并不高，还是得按中国的方法来。（存疑，且不多说）</p>\n",
     "createdAt": "2022-04-13T10:58:17Z",
-    "updatedAt": "2022-04-13T10:58:17Z",
+    "updatedAt": "2022-06-22T08:49:19Z",
     "reactionCount": 2,
     "hasMyReaction": false,
     "replies": []
@@ -72,7 +72,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2605320",
     "bodyHTML": "<p><a href=\"https://bbs.pku.edu.cn/v2/post-read-single.php?bid=294&amp;postid=25508203\">#BBS Joke#</a></p>\n<ul>\n<li>翟天临：知网是什么东西？</li>\n<li>中科院：知网是什么东西。</li>\n</ul>\n",
     "createdAt": "2022-04-21T00:27:54Z",
-    "updatedAt": "2022-04-21T00:27:54Z",
+    "updatedAt": "2022-06-22T08:49:19Z",
     "reactionCount": 2,
     "hasMyReaction": false,
     "replies": []
@@ -81,7 +81,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2705349",
     "bodyHTML": "<p><a href=\"https://mp.weixin.qq.com/s/YKqREgl5_35s86kF4sLO9Q\">#摘句#</a></p>\n<p>数学的难题，每解决一个就相当于杀掉了下金蛋的鹅。物理学中也有百年难题，每解决一次就相当于发现了一只下金蛋的鹅。</p>\n",
     "createdAt": "2022-05-07T08:45:29Z",
-    "updatedAt": "2022-05-07T08:47:56Z",
+    "updatedAt": "2022-06-22T08:49:21Z",
     "reactionCount": 1,
     "hasMyReaction": false,
     "replies": []
@@ -90,7 +90,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2708580",
     "bodyHTML": "<p>看到浙大的自动打卡有五百多 Fork 很震惊\n<img width=\"274\" alt=\"ZJU\" src=\"https://user-images.githubusercontent.com/36528777/167289640-2f72ae4f-4d7a-4370-bfad-7dd9b7a87a33.png\" /><img width=\"273\" alt=\"PKU\" src=\"https://user-images.githubusercontent.com/36528777/167289720-dc4bd6c3-5ba5-4d1c-8a9f-4ada3141e643.png\" />\n哦咱这的自动报备也有四百多 Fork，那没事了</p>\n<p>（不过浙大的 star 加起来也就 80 左右 🐶</p>\n",
     "createdAt": "2022-05-08T09:19:22Z",
-    "updatedAt": "2022-05-08T09:19:22Z",
+    "updatedAt": "2022-06-22T08:49:20Z",
     "reactionCount": 1,
     "hasMyReaction": false,
     "replies": [
@@ -98,7 +98,7 @@
         "authorId": "AllanChain",
         "authorName": "Allan Chain",
         "createdAt": "2022-05-08T09:23:13Z",
-        "updatedAt": "2022-05-08T09:23:13Z",
+        "updatedAt": "2022-06-22T08:49:21Z",
         "bodyHTML": "<p>看了一下他们要填的表单：这么形式主义的政策不群起反抗才怪</p>\n"
       }
     ]
@@ -107,7 +107,7 @@
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2722339",
     "bodyHTML": "<p>波普对决定论的批判有一点很有意思（虽然这个想法不见得是波普首创的）：“我们不能科学地预测我们在我们自己的知识增长过程中将获得的结果”</p>\n<p>换一句话理解就是我今天无法预测我 exactly 明天将要知道什么，否则我今天就知道了。</p>\n<p>有意思的是，这一悖论并没有禁止我预测别人在明天将要知道什么，只要我不告诉他我的预测。似乎这鲜明地展示了主客二分？！</p>\n<p>但并不是这样。这只是我的预测结果和我的预测行为之间存在强关联的结果。</p>\n<p>这个问题反过来看更有意思：主客的分别是不是预测、观察等行为与其结果具有的关联不同而产生的呢？这是否有助于解释哥本哈根诠释中的观察者和被观察者分立的问题呢？</p>\n",
     "createdAt": "2022-05-10T13:17:47Z",
-    "updatedAt": "2022-05-10T13:17:47Z",
+    "updatedAt": "2022-06-22T08:49:20Z",
     "reactionCount": 2,
     "hasMyReaction": true,
     "replies": []
@@ -128,7 +128,15 @@
     "updatedAt": "2022-05-26T23:57:35Z",
     "reactionCount": 2,
     "hasMyReaction": false,
-    "replies": []
+    "replies": [
+      {
+        "authorId": "AllanChain",
+        "authorName": "Allan Chain",
+        "createdAt": "2022-06-22T08:50:08Z",
+        "updatedAt": "2022-06-22T08:50:09Z",
+        "bodyHTML": "<p>它居然开始要收费了（悲）</p>\n"
+      }
+    ]
   },
   {
     "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-2842827",
