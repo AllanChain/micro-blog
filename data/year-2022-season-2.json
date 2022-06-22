@@ -154,6 +154,14 @@
     "updatedAt": "2022-06-22T09:01:25Z",
     "reactionCount": 1,
     "hasMyReaction": false,
-    "replies": []
+    "replies": [
+      {
+        "authorId": "Yixuan-Wang",
+        "authorName": "Yixuan Wang",
+        "createdAt": "2022-06-22T14:50:43Z",
+        "updatedAt": "2022-06-22T14:50:43Z",
+        "bodyHTML": "<p>Just some trade off for speeding up compiling, I guess...🤔. And a crate might compile to different binaries across different projects, so you cannot reuse these intermediate binaries like what you do to those scripts(or .pyc) in JavaScript or Python.</p>\n"
+      }
+    ]
   }
 ]
