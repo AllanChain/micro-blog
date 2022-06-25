@@ -163,5 +163,23 @@
         "bodyHTML": "<p>Just some trade off for speeding up compiling, I guess...🤔. And a crate might compile to different binaries across different projects, so you cannot reuse these intermediate binaries like what you do to those scripts(or .pyc) in JavaScript or Python.</p>\n"
       }
     ]
+  },
+  {
+    "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-3020950",
+    "bodyHTML": "<p>#Joke （转载树洞）</p>\n<p>洞主: 把会的做完还剩下一个多小时，然后 blahblah\nAlice: 我比你快一点，把会的做完，还剩2个小时</p>\n<p>（注：考试时间总共两个小时）</p>\n",
+    "createdAt": "2022-06-25T02:38:57Z",
+    "updatedAt": "2022-06-25T02:38:57Z",
+    "reactionCount": 1,
+    "hasMyReaction": false,
+    "replies": []
+  },
+  {
+    "url": "https://github.com/AllanChain/micro-blog/discussions/3#discussioncomment-3020951",
+    "bodyHTML": "<p>#Joke（转载树洞）</p>\n<p>洞主：做梦梦见考平统\nCarol: 一晚上做不完吧？要不今天晚上接着做吧\n洞主：Re Carol: 笑死，再给我十个晚上也做不出来啊</p>\n<p>（注：本学期为黄华卿老师第一次教平统，期末出卷难了亿点点）</p>\n",
+    "createdAt": "2022-06-25T02:39:14Z",
+    "updatedAt": "2022-06-25T02:39:14Z",
+    "reactionCount": 1,
+    "hasMyReaction": false,
+    "replies": []
   }
 ]
