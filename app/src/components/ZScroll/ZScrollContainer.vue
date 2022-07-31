@@ -15,8 +15,9 @@ provide('item-z-gap', itemZGap)
 
 const allItemIndices = ref<number[]>([])
 const itemsCount = computed(() => {
-  if (allItemIndices.value.length === 0)
+  if (allItemIndices.value.length === 0) {
     return 0
+  }
   return Math.max(...allItemIndices.value) + 1
 })
 
@@ -32,14 +33,16 @@ const currentItemIndex = computed(() => {
   const floatIndex = scrollY.value / itemYGap
   const roundedIndex = Math.round(floatIndex)
   // We stick to previous index if not close enough to the next one
-  if (Math.abs(roundedIndex - floatIndex) < 0.01)
+  if (Math.abs(roundedIndex - floatIndex) < 0.01) {
     return roundedIndex
+  }
   return Math.floor(floatIndex)
 })
 provide('current-item-index', currentItemIndex)
 watchEffect(() => {
-  if (currentItemIndex.value === itemsCount.value - 1)
+  if (currentItemIndex.value === itemsCount.value - 1) {
     emit('endReached')
+  }
 })
 
 onMounted(() => {
@@ -59,15 +62,15 @@ onMounted(() => {
       v-for="i in itemsCount"
       :key="i"
       :style="{
-        height: `${itemYGap}px`,
-        'scroll-snap-align': 'start'
+        'height': `${itemYGap}px`,
+        'scroll-snap-align': 'start',
       }"
     />
   </div>
   <div
     fixed top-0 right-0 w-full h-full
     :style="{
-      perspective: `${primaryPerspective}px`,
+      'perspective': `${primaryPerspective}px`,
       'perspective-origin': '50% 50%',
     }"
   >

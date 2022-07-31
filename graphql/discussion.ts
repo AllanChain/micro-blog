@@ -34,36 +34,36 @@ export async function getDiscussions(): Promise<Discussion[]> {
     ?.flatMap((node) => {
       return node !== null
         ? {
-          title: node.title,
-          createdAt: node.createdAt,
-          updatedAt: node.updatedAt,
-          slug: slugger.slug(node.title),
-          blogs: node.comments.nodes
-            ?.filter(node => node?.author?.login === 'AllanChain')
-            ?.flatMap(node => node
-              ? [{
-                url: node.url,
-                bodyHTML: parse(node.body),
-                createdAt: node.createdAt,
-                updatedAt: node.updatedAt,
-                reactionCount: node.reactions.totalCount + node.upvoteCount,
-                hasMyReaction: node.reactions.nodes?.some(
-                  node => node?.user?.login === 'AllanChain',
-                ) || false,
-                replies: node.replies.nodes?.flatMap(node => node
-                  ? [{
-                    authorId: node.author!.login ?? '',
-                    authorName: 'name' in node.author! ? node.author!.name ?? '' : '',
+            title: node.title,
+            createdAt: node.createdAt,
+            updatedAt: node.updatedAt,
+            slug: slugger.slug(node.title),
+            blogs: node.comments.nodes
+              ?.filter(node => node?.author?.login === 'AllanChain')
+              ?.flatMap(node => node
+                ? [{
+                    url: node.url,
+                    bodyHTML: parse(node.body),
                     createdAt: node.createdAt,
                     updatedAt: node.updatedAt,
-                    bodyHTML: parse(node.body),
+                    reactionCount: node.reactions.totalCount + node.upvoteCount,
+                    hasMyReaction: node.reactions.nodes?.some(
+                      node => node?.user?.login === 'AllanChain',
+                    ) || false,
+                    replies: node.replies.nodes?.flatMap(node => node
+                      ? [{
+                          authorId: node.author!.login ?? '',
+                          authorName: 'name' in node.author! ? node.author!.name ?? '' : '',
+                          createdAt: node.createdAt,
+                          updatedAt: node.updatedAt,
+                          bodyHTML: parse(node.body),
+                        }]
+                      : [],
+                    ) ?? [],
                   }]
-                  : [],
-                ) ?? [],
-              }]
-              : [],
-            ) ?? [],
-        }
+                : [],
+              ) ?? [],
+          }
         : []
     })
     ?.sort((a, b) =>

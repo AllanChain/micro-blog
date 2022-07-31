@@ -35,8 +35,7 @@ export default defineConfig({
       variants: [
         (matcher) => {
           const match = matcher.match(/my-last-(?<type>even|odd):(?<rest>.+)/)
-          if (match === null || match.groups === undefined)
-            return matcher
+          if (match === null || match.groups === undefined) { return matcher }
           return {
             matcher: match.groups.rest,
             selector: s => `${s}:nth-last-child(${match.groups!.type})`,

@@ -1,7 +1,10 @@
 {
   "private": true,
   "name": "@acbits/root",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint **/*.{vue,ts}",
+    "lint:fix": "eslint --fix **/*.{vue,ts}"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
     "eslint": "^8.20.0",

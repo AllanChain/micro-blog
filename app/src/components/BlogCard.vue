@@ -12,17 +12,20 @@ const showDetailsPopup = ref(false)
 watch(divElement, () => {
   if (divElement.value) {
     new ResizeObserver(() => {
-      if (divElement.value)
+      if (divElement.value) {
         showReadMore.value = divElement.value.clientHeight < divElement.value.scrollHeight
+      }
     }).observe(divElement.value)
   }
 })
 
 watch(showDetailsPopup, (show) => {
-  if (show)
+  if (show) {
     document.body.style.overflow = 'hidden'
-  else
+  }
+  else {
     document.body.style.overflow = 'auto'
+  }
 })
 </script>
 
@@ -87,7 +90,7 @@ watch(showDetailsPopup, (show) => {
           <button
             i-carbon-close mr-2
             text="2xl gray-800 dark:gray-400"
-            @click="showDetailsPopup= false"
+            @click="showDetailsPopup = false"
           />
         </div>
       </div>

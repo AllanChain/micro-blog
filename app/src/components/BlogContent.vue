@@ -7,7 +7,6 @@ defineProps<{ blog: MicroBlog }>()
 const formatDate = (date: string) => lightDateFormat(
   new Date(date), '{yyyy}-{MM}-{dd} {HH}:{mm}:{ss}',
 )
-
 </script>
 
 <template>
