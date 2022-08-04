@@ -1,6 +1,9 @@
-name: Build Site on Blog Change
+name: Build Site
 
 on:
+  push:
+    branches:
+      - main
   discussion_comment:
     types: [created, edited, deleted]
 
@@ -19,14 +22,10 @@ concurrency:
 jobs:
   build:
     name: Build the Pages
-    runs-on: ubuntu-latest
     if: github.event.sender.login == 'AllanChain'
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          path: app/dist
       - uses: actions/setup-node@v1
         with:
           node-version: '18.x'
@@ -34,18 +33,19 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.pnpm-store
-          key: blog-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            blog-${{ runner.os }}-
+            ${{ runner.os }}-
       - uses: pnpm/action-setup@v2.0.1
         with:
           version: 7.8.0
-          run_install: |
-            cwd: graphql
-      - run: pnpm data:dist
+          run_install: true
+      - run: pnpm data:public
         working-directory: graphql
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: pnpm build --base=/micro-blog/
+        working-directory: app
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
