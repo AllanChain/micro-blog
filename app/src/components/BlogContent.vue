@@ -16,12 +16,7 @@ const formatDate = (date: string) => lightDateFormat(
       <div>Allan Chain</div>
       <div text="xs gray:500 dark:gray-400">
         <div flex>
-          <div i-carbon-calendar mr-1 />
           <div>{{ formatDate(blog.createdAt) }}</div>
-        </div>
-        <div flex>
-          <div i-carbon-recently-viewed mr-1 />
-          <div>{{ formatDate(blog.updatedAt) }}</div>
         </div>
       </div>
     </div>
